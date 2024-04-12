@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_olive"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/tv_TableName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green"
+                android:text="Table 1"
+                android:padding="3dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:id="@+id/img_TableClockIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ico_clock"
+                android:padding="3dp"
+                android:layout_below="@+id/tv_TableName"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/tv_TableTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:00"
+                android:layout_toEndOf="@+id/img_TableMoneyIcon"
+                android:layout_below="@+id/tv_TableName"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/img_TableMoneyIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/dollarcircle"
+                android:padding="3dp"
+                android:layout_below="@+id/img_TableClockIcon"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/tv_TablePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123.456.1678"
+                android:layout_toEndOf="@+id/img_TableMoneyIcon"
+                android:layout_below="@+id/img_TableClockIcon"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_TableStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_TablePrice"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="còn khách"/>
+
+            <ImageView
+                android:id="@+id/img_MoreFromTable"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ico_more"
+                android:padding="11dp"
+                android:layout_below="@id/tv_TableName"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="abc" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

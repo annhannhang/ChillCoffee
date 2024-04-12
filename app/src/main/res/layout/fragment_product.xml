@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ProductFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutProduct">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_Product"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/edt_search"
+                android:elevation="20dp"
+                app:queryHint="Search"
+                app:iconifiedByDefault="false"
+                android:drawableLeft="@drawable/ico_search"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_Product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/search_Product"
+                android:layout_margin="10dp" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_AddNewProduct"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ico_add"
+                android:backgroundTint="@color/greenPrimary"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

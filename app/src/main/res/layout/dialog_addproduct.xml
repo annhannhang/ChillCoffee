@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#5E5E5E"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <TextView
+                    android:id="@+id/tv_AddImageProduct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm ảnh"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"
+                    android:padding="15dp"/>
+
+                <Button
+                    android:id="@+id/btn_LoadImgProduct"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_AddImageProduct"
+                    android:elevation="20dp"
+                    android:background="@drawable/btn_green"
+                    android:text="Load image"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/img_AddProduct"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/lazyimage" />
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/edt_AddLinkImageProduct"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edt_login"
+                android:hint="Paste link here"
+                android:drawableLeft="@drawable/ico_pasteweb"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="13dp" />
+            <EditText
+                android:id="@+id/edt_AddNameProduct"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_login"
+                android:hint="Product name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="13dp" />
+            <EditText
+                android:id="@+id/edt_AddPriceProduct"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_login"
+                android:hint="Price"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="13dp" />
+            <Button
+                android:id="@+id/btn_AddProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_olive"
+                android:text="Add Product"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

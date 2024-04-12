@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#5E5E5E"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edt_AddTableNameBill"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_login"
+                android:hint="Table name"
+                android:drawableStart="@drawable/ico_qlban"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="13dp"
+                tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/edt_AddHRBill"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_login"
+                android:hint="HR"
+                android:drawableStart="@drawable/ico_qlnv"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="13dp"
+                tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/edt_AddTableTimeBill"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_login"
+                android:hint="Time"
+                android:drawableStart="@drawable/ico_timer"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="13dp"
+                tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/edt_AddTableTotalBill"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_login"
+                android:hint="Price"
+                android:drawableStart="@drawable/ico_dollar"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="13dp"
+                tools:ignore="HardcodedText,RtlSymmetry"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/btn_AddBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_green"
+                android:text="Add Bill"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_Home"
+        android:icon="@drawable/ico_home"
+        android:title="Home"
+        tools:ignore="HardcodedText" />
+
+    <group>
+        <item android:title="Management"
+            tools:ignore="HardcodedText">
+            <menu>
+                <item
+                    android:id="@+id/nav_qlnv"
+                    android:icon="@drawable/ico_qlnv"
+                    android:title="HR Management"/>
+                <item
+                    android:id="@+id/nav_qlsp"
+                    android:icon="@drawable/ico_qlsp"
+                    android:title="Product management"/>
+                <item
+                    android:id="@+id/nav_qlhd"
+                    android:icon="@drawable/ico_qlhd"
+                    android:title="Billing management"/>
+                <item
+                    android:id="@+id/nav_qlban"
+                    android:icon="@drawable/ico_qlban"
+                    android:title="Table management"/>
+
+            </menu>
+        </item>
+    </group>
+
+    <group>
+        <item android:title="Analysis"
+            tools:ignore="HardcodedText">
+            <menu>
+                <item
+                    android:id="@+id/nav_thongke"
+                    android:icon="@drawable/ico_tke"
+                    android:title="Statistical analysis"/>
+            </menu>
+        </item>
+    </group>
+
+    <group>
+        <item android:title="Settings"
+            tools:ignore="HardcodedText">
+            <menu>
+                <item
+                    android:id="@+id/nav_changePass"
+                    android:icon="@drawable/ico_cpass"
+                    android:title="Change Password"/>
+                <item
+                    android:id="@+id/nav_Logout"
+                    android:icon="@drawable/ico_logout"
+                    android:title="Logout"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>
